@@ -4,10 +4,10 @@ import smtplib
 import time
 
 
-MY_LAT = 51.507351 # Your latitude
-MY_LONG = -0.127758 # Your longitude
-my_email = "pythontut13@gmail.com"
-password = "jypcnuephmocgpbw"
+MY_LAT = # Your latitude
+MY_LONG = # Your longitude
+my_email = #Your Email
+password = #Your Password
 
 def is_iss_close():
 
@@ -52,16 +52,8 @@ while True:
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
                 connection.starttls()
                 connection.login(user=my_email, password=password)
-                connection.sendmail(from_addr=my_email, to_addrs=my_email, msg="Subject: ISS Alert\n\nLook up! The ISS is above you.")
+                connection.sendmail(from_addr=my_email, to_addrs=#Any other Email, msg="Subject: ISS Alert\n\nLook up! The ISS is above you.")
 
-
-
-
-#If the ISS is close to my current position
-# and it is currently dark
-# Then send me an email to tell me to look up.
-
-# BONUS: run the code every 60 seconds.
 
 
 
